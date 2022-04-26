@@ -9,7 +9,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 @WebServlet(name = "JDBCemoServlet", value = "/JDBCemoServlet")
+
 public class JDBCemoServlet extends HttpServlet {
+    Connection con=null;
+    @Override
+    public void init() throws  ServletException{
+        super.init();
+    }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String driver="";
@@ -17,6 +23,13 @@ public class JDBCemoServlet extends HttpServlet {
         String username="";
         String password="";
     }
+ServletConfig config=getServletConfig();
+   String username=config.getInitParameter("");
+   ServletContext  context=getServletContext();
+    String driver=context.getInitParameter("driver");
+    String url=context.getInitParameter("url");
+    String username=context.getInitParameter("username");
+    String password=context.getInitParameter("password");
 
   try{
       Class.forName(driver);
@@ -30,4 +43,14 @@ public class JDBCemoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
+  @Override
+    public void destroy(){
+        super.destroy();
+        try {
+            con.close();
+        }catch (SQLException throwables){
+            throwables.printStackTrace();
+        }
+
+  }
 }
