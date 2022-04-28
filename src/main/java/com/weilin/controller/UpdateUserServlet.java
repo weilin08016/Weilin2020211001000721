@@ -1,4 +1,4 @@
-package com.weilin.dao;
+package com.weilin.controller;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
