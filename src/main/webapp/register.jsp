@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<%@include file="header.jsp"%>
+<%@include file="WEB-INF/views/header.jsp"%>
 <form method="post" action="/register">
         username<input type="text" name="username"/><br>
         password<input type="password" name="password"/><br>
@@ -19,6 +19,6 @@
     Gender<input type="radio" name="gender"/>Male<input type="radio" name="gender">female<br>
     Date of Birth :<input type="text name" name="birthDate"><br>
     <input type="submit" name="Register"/>
-</form><%@include file="footer.jsp"%>
+</form><%@include file="WEB-INF/views/footer.jsp"%>
 </body>
 </html>

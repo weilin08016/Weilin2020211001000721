@@ -59,7 +59,7 @@
     </welcome-file-list>
     <context-param>
         <param-name>driver</param-name>
-        <param-value>jdbc:sqlserver://localhost;databaseName=userdb</param-value>
+        <param-value>com.microsoft.sqlserver.jdbc.SQlServerDriver://localhost;databaseName=userdb</param-value>
     </context-param>
     <context-param>
         <param-name>url</param-name>
@@ -72,6 +72,7 @@
         <param-name>password</param-name>
         <param-value>admin123456789</param-value>
     </context-param>
+
 
 
 
