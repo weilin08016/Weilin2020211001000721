@@ -1,4 +1,4 @@
-package com.weilin.week5.demo;
+package com.weilin.week5;
 
 import com.weilin.dao.UserDao;
 import com.weilin.model.User;

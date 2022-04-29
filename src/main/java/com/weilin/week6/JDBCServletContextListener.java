@@ -1,4 +1,4 @@
-package com.weilin.week6.demo;
+package com.weilin.week6;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;

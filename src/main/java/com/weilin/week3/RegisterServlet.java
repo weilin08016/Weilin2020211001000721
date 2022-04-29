@@ -1,4 +1,4 @@
-package com.weilin.week3.demo;
+package com.weilin.week3;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
