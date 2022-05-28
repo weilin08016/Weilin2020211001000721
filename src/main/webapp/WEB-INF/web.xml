@@ -11,15 +11,15 @@
     
     <servlet>
         <servlet-name>hhh</servlet-name>
-        <servlet-class>com.weilin.week2.demo.HelloServlet</servlet-class>
+        <servlet-class>com.weilin.week2.HelloServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>RegisterServlet</servlet-name>
-        <servlet-class>com.weilin.week3.demo.RegisterServlet</servlet-class>
+        <servlet-class>com.weilin.week3.RegisterServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LifeCycleServlet</servlet-name>
-        <servlet-class>com.weilin.week3.demo.LifeCycleServlet</servlet-class>
+        <servlet-class>com.weilin.week3.LifeCycleServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>JDBCemoServlet</servlet-name>
